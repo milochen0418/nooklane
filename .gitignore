@@ -26,3 +26,9 @@ venv/
 playwright_user_data/
 testcases/**/output/
 reflex.log
+
+# Documentation videos and related files
+docs/videos/Nooklane-intro.en.mp4
+docs/videos/Nooklane-intro.en.srt
+docs/videos/review-frames/
+docs/videos/nooklane-intro.src/
