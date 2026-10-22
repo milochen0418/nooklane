@@ -1,0 +1,15 @@
+# Extra URL paths that should be proxied to the backend port
+# instead of the frontend (Vite/static) port by re-ddns nginx.
+# One path per line. Comments (#) and blank lines are ignored.
+
+# LiveKit signalling (WebSocket /rtc, /rtc/v1 and HTTP /rtc/.../validate).
+# The Reflex backend relays these to the embedded livekit-server on 127.0.0.1:7580.
+# No trailing slash: the SDK's v0 fallback connects to exactly "/rtc".
+/rtc
+
+# LiveKit server API (Twirp), so other *.reflex-ddns.com apps can use the
+# server SDKs (e.g. RoomService) against https://nooklane.reflex-ddns.com.
+/twirp/
+
+# Map JSON for the lobby's thumbnails (nooklane/api.py).
+/_nooklane/

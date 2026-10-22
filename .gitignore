@@ -1,0 +1,28 @@
+.web
+assets/external/
+.states
+.web/
+.states/
+__pycache__/
+/app/__pycache__/
+
+# Mac
+.DS_Store
+
+# Python
+*.py[cod]
+*$py.class
+.env
+.venv/
+venv/
+*.db
+
+# VS Code
+.vscode/
+
+# Playwright / Test Artifacts
+.pytest_cache/
+.playwright-mcp/
+playwright_user_data/
+testcases/**/output/
+reflex.log
